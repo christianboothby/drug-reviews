@@ -1,0 +1,267 @@
+,,total_pred
+,,mean
+Condition,Drug,
+ADHD,adderall,0.05971095075533025
+ADHD,adderall xr,0.04854266310810453
+ADHD,amphetamine/dextroamphetamine,0.044771634615384616
+ADHD,atomoxetine,0.04613578909353557
+ADHD,concerta,0.05623953511277454
+ADHD,dexmethylphenidate,0.04379312311113647
+ADHD,guanfacine,0.08438666185145059
+ADHD,lisdexamfetamine,0.051329101368776046
+ADHD,methylphenidate,0.04447840891502863
+ADHD,strattera,0.06774449513985323
+ADHD,vyvanse,0.05001805706031058
+Acne,adapalene / benzoyl peroxide,0.011579241071428565
+Acne,benzoyl peroxide/clindamycin,0.012247474747474741
+Acne,doxycycline,0.013630735140771637
+Acne,drospirenone/ethinyl estradiol,0.011423679060665357
+Acne,epiduo,0.013569743935309967
+Acne,ethinyl estradiol/norgestimate,0.023395344980097318
+Acne,isotretinoin,0.021738801452784524
+Acne,minocycline,0.010296846011131719
+Allergies,hydroxyzine,0.5175202156334232
+Allergies,levocetirizine,0.15188679245283015
+Allergies,xyzal,0.20464441219158205
+Angina,carvedilol,0.1875
+Angina,isosorbide dinitrate,1.453125
+Angina,isosorbide mononitrate,0.78125
+Angina,lopressor,2.203125
+Angina,metoprolol,0.0
+Angina,metoprolol tartrate,1.078125
+Angina,nitroglycerin,0.421875
+Angina,nitrolingual pumpspray,1.921875
+Angina,ranexa,1.1741071428571428
+Angina,ranolazine,0.99609375
+Anxiety,alprazolam,0.04994587146934355
+Anxiety,buspar,0.08255093002657216
+Anxiety,buspirone,0.05204483674903025
+Anxiety,clonazepam,0.04990520390311033
+Anxiety,diazepam,0.0818745470649811
+Anxiety,gabapentin,0.10746585240781314
+Anxiety,hydroxyzine,0.0310275245243312
+Anxiety,lexapro,0.05764148429792536
+Anxiety,lorazepam,0.049913233672565546
+Anxiety,mirtazapine,0.06350885078592863
+Anxiety,xanax,0.06692998537499739
+Asthma,breo ellipta,0.24350877192982456
+Asthma,cinqair,0.01
+Asthma,dulera,0.4633333333333334
+Asthma,fasenra,0.41833333333333333
+Asthma,ipratropium,0.4000000000000001
+Asthma,mepolizumab,0.20166666666666666
+Asthma,methylprednisolone,0.29000000000000004
+Asthma,montelukast,0.3785714285714285
+Asthma,nucala,0.22444444444444445
+Asthma,prednisone,0.6311111111111111
+BiPolar Disorder,abilify,0.03990787585894434
+BiPolar Disorder,aripiprazole,0.045126888515848715
+BiPolar Disorder,cariprazine,0.03203741059966992
+BiPolar Disorder,lamictal,0.08853387664731305
+BiPolar Disorder,lamotrigine,0.07784028741029195
+BiPolar Disorder,latuda,0.06970474967907571
+BiPolar Disorder,lithium,0.06385763548037957
+BiPolar Disorder,quetiapine,0.04535180979340159
+BiPolar Disorder,seroquel,0.05109900186005084
+BiPolar Disorder,vraylar,0.031949793182142354
+BiPolar Disorder,ziprasidone,0.033982313507345596
+Bronchitis,amoxicillin/clavulanate,0.3470911949685534
+Bronchitis,augmentin,0.12382075471698113
+Bronchitis,cefdinir,0.05503144654088051
+Bronchitis,clarithromycin,0.18054651919323356
+Bronchitis,doxycycline,0.1839622641509434
+Bronchitis,guaifenesin,0.5861921097770154
+Bronchitis,levaquin,0.18935309973045825
+Bronchitis,levofloxacin,0.2903087478559177
+Bronchitis,mucinex,0.47405660377358494
+Bronchitis,zithromax,0.6630727762803235
+Cancer,doxorubicin,12.0
+Chlamydia,azithromycin,0.06618348273888992
+Chlamydia,doxycycline,0.31191588785046725
+Chlamydia,zithromax,0.1261682242990654
+Cholesterol,atorvastatin,0.29941563184806425
+Cholesterol,crestor,0.6191119691119692
+Cholesterol,evolocumab,0.10671580671580674
+Cholesterol,ezetimibe,0.209009009009009
+Cholesterol,lipitor,0.5873873873873874
+Cholesterol,livalo,0.37783783783783786
+Cholesterol,niacin,0.1945945945945946
+Cholesterol,praluent,0.1766891891891892
+Cholesterol,repatha,0.12482482482482483
+Cholesterol,simvastatin,0.2266891891891892
+Cholesterol,zetia,0.38603603603603603
+Cold & Flu,acetaminophen/chlorpheniramine/phenylephrine,0.39473684210526316
+Cold & Flu,bronkaid,2.0263157894736845
+Cold & Flu,chlorpheniramine/hydrocodone,0.631578947368421
+Cold & Flu,coricidin hbp cold & flu,3.710526315789474
+Cold & Flu,dexbrompheniramine/pseudoephedrine,0.6118421052631579
+Cold & Flu,diphenhydramine,0.05263157894736842
+Cold & Flu,ephedrine/guaifenesin,2.4473684210526314
+Cold & Flu,pseudoephedrine/triprolidine,0.39473684210526316
+Cold & Flu,tussionex pennkinetic,0.5394736842105263
+Constipation,bisacodyl,0.01684663720901856
+Constipation,correctol,0.010148321623731459
+Constipation,docusate,0.05737704918032787
+Constipation,dulcolax,0.017098108039833533
+Constipation,fleet enema,0.03634707733068389
+Constipation,linzess,0.0710918247080253
+Constipation,magnesium citrate,0.06760225202848151
+Constipation,milk of magnesia,0.03126897389192471
+Constipation,miralax,0.1338123186939216
+Constipation,phillips' milk of magnesia,0.0520888418826018
+Constipation,polyethylene glycol 3350,0.11349306431273642
+Depression,bupropion,0.04387470945753684
+Depression,citalopram,0.03185181943981054
+Depression,desvenlafaxine,0.03376626957864549
+Depression,duloxetine,0.0438400185580656
+Depression,escitalopram,0.03575367936718039
+Depression,fluoxetine,0.043132673320817425
+Depression,pristiq,0.03567654405328664
+Depression,sertraline,0.04233589883997891
+Depression,venlafaxine,0.025125928377086562
+Depression,vilazodone,0.04876737260092654
+Depression,vortioxetine,0.03185950091485966
+Diabetes (Type 1),admelog,0.22413793103448276
+Diabetes (Type 1),afrezza,3.672413793103448
+Diabetes (Type 1),basaglar,0.3866995073891625
+Diabetes (Type 1),humalog,0.6724137931034483
+Diabetes (Type 1),humalog kwikpen,0.35344827586206895
+Diabetes (Type 1),levemir,0.13793103448275865
+Diabetes (Type 1),tresiba,0.3222811671087534
+Diabetes (Type 2),bydureon,0.0446633312486971
+Diabetes (Type 2),byetta,0.09326923076923077
+Diabetes (Type 2),farxiga,0.05015082956259427
+Diabetes (Type 2),glimepiride,0.12805250305250304
+Diabetes (Type 2),invokana,0.11115471829757546
+Diabetes (Type 2),januvia,0.08523266856600192
+Diabetes (Type 2),jardiance,0.07762664165103186
+Diabetes (Type 2),metformin,0.11632730015082955
+Diabetes (Type 2),ozempic,0.052797654541840586
+Diabetes (Type 2),trulicity,0.040772928994082816
+Diabetes (Type 2),victoza,0.08830680813439434
+Eczema,desonide,0.47405660377358494
+Eczema,desoximetasone,0.3679245283018868
+Eczema,dupixent,0.48264150943396233
+Eczema,elidel,0.4002695417789757
+Eczema,elocon,1.0235849056603772
+Eczema,fluocinonide,0.1556603773584906
+Eczema,halobetasol,0.5660377358490566
+Eczema,hydrocortisone,0.2971698113207547
+Eczema,prednisone,0.9905660377358491
+Eczema,triamcinolone,0.25471698113207547
+HIV/AIDS,atripla,0.37733333333333335
+HIV/AIDS,bictarvy,0.18307692307692308
+HIV/AIDS,complera,0.135
+HIV/AIDS,dolutegravir,0.06
+HIV/AIDS,efavirenz,0.04
+HIV/AIDS,genvoya,0.10342105263157894
+HIV/AIDS,isentress,0.07
+HIV/AIDS,stribild,0.22333333333333336
+HIV/AIDS,tivicay,0.08333333333333333
+HIV/AIDS,triumeq,0.24588235294117644
+Hayfever,azelastine,0.15109890109890112
+Hayfever,cetirizine,0.12964919695688926
+Hayfever,dymista,0.0521978021978022
+Hayfever,fexofenadine,0.05998168498168497
+Hayfever,fluticasone,0.08461538461538459
+Hayfever,loratadine,0.108712715855573
+Hayfever,mometasone,0.11813186813186813
+Hayfever,montelukast,0.20027472527472528
+Hayfever,singulair,0.42902930402930406
+Hayfever,triamcinolone nasal,0.07814407814407814
+Hayfever,zyrtec,0.09117445054945053
+Herpes,abreva,0.09625090122566687
+Herpes,acyclovir,0.45719178082191775
+Herpes,acyclovir topical,0.10273972602739725
+Herpes,zovirax,0.4315068493150685
+Hypertension,amlodipine,0.11596789710871434
+Hypertension,atenolol,0.11288546255506611
+Hypertension,benicar,0.15186000978952519
+Hypertension,clonidine,0.11659324522760645
+Hypertension,hydrochlorothiazide,0.13362701908957414
+Hypertension,lisinopril,0.1070756818294313
+Hypertension,losartan,0.1212644362424098
+Hypertension,metoprolol,0.10276177566926467
+Hypertension,nebivolol,0.10075680560262058
+Hypertension,olmesartan,0.11017013519671882
+Hypertension,valsartan,0.11299559471365636
+IBS,budesonide,13.125
+IBS,entocort ec,16.875
+IBS,mesalamine,1.125
+Insomnia,ambien,0.0326441102756892
+Insomnia,amitriptyline,0.09319038336582193
+Insomnia,belsomra,0.02187286397812714
+Insomnia,doxepin,0.03932391955498503
+Insomnia,eszopiclone,0.02684111408464665
+Insomnia,lunesta,0.03136499786050492
+Insomnia,mirtazapine,0.055214424951267035
+Insomnia,quetiapine,0.057404773194246896
+Insomnia,temazepam,0.041656072548521064
+Insomnia,trazodone,0.06639466884264925
+Insomnia,zolpidem,0.03269505063471684
+Migraine,acetaminophen/aspirin/caffeine,0.034493161705551084
+Migraine,eletriptan,0.04203539823008849
+Migraine,gabapentin,0.21396263520157321
+Migraine,imitrex,0.04313162720242366
+Migraine,maxalt,0.04880082082852378
+Migraine,metoclopramide,0.025850023288309276
+Migraine,reglan,0.026057030481809244
+Migraine,relpax,0.0489535047057171
+Migraine,rizatriptan,0.04177954367587742
+Migraine,sumatriptan,0.028382364665550518
+Migraine,zolmitriptan,0.02041297935103245
+Obesity,adipex-p,0.10600230858022316
+Obesity,contrave,0.05330091568338249
+Obesity,diethylpropion,0.09361172566371682
+Obesity,lorcaserin,0.11218378475015645
+Obesity,orlistat,0.12645034414945916
+Obesity,phendimetrazine,0.0830328853927674
+Obesity,phentermine,0.0534510264282704
+Obesity,qsymia,0.10407448377581122
+Obesity,saxenda,0.046327990204263356
+Obesity,topiramate,0.21234180226472546
+Obesity,xenical,0.15048344804981972
+Pain,acetaminophen/hydrocodone,0.04295766583109598
+Pain,acetaminophen/oxycodone,0.047535829865927
+Pain,diclofenac,0.04193024593214031
+Pain,dilaudid,0.0481006318384959
+Pain,gabapentin,0.10093304753498937
+Pain,hydromorphone,0.03905560458958516
+Pain,ketorolac,0.025849174621304826
+Pain,nucynta,0.07237288635760028
+Pain,oxycodone,0.08118756155902633
+Pain,tapentadol,0.0707165973185391
+Pain,tramadol,0.03954127497816822
+Pneumonia,amoxicillin/clavulanate,0.015
+Pneumonia,avelox,0.3625
+Pneumonia,azithromycin,0.300625
+Pneumonia,cefdinir,0.09
+Pneumonia,ceftriaxone,0.615
+Pneumonia,cefuroxime,0.615
+Pneumonia,clarithromycin,0.13093749999999998
+Pneumonia,doxycycline,0.4216666666666667
+Pneumonia,levaquin,0.42700000000000016
+Pneumonia,levofloxacin,0.2192857142857143
+Pneumonia,moxifloxacin,0.256
+Schitzophrenia,abilify,0.3585147247119079
+Schitzophrenia,aripiprazole,0.2699020208205756
+Schitzophrenia,cariprazine,0.1528169014084507
+Schitzophrenia,invega,0.26735412474849096
+Schitzophrenia,invega sustenna,0.12059859154929577
+Schitzophrenia,latuda,0.29460093896713613
+Schitzophrenia,olanzapine,0.32202304737516
+Schitzophrenia,paliperidone,0.14069835680751175
+Schitzophrenia,quetiapine,0.21566901408450703
+Schitzophrenia,risperidone,0.14025821596244134
+Schitzophrenia,ziprasidone,0.2906530089628681
+Seizures,aptiom,0.07941176470588236
+Seizures,keppra,0.36257606490872213
+Seizures,lacosamide,0.3114973262032085
+Seizures,levetiracetam,0.3099424552429667
+Seizures,oxcarbazepine,0.1881127450980392
+Seizures,phenobarbital,0.16268382352941177
+Seizures,phenytoin,0.11151960784313726
+Seizures,trileptal,0.2426470588235294
+Seizures,vimpat,0.369281045751634
+Seizures,zonegran,0.22931985294117646
+Seizures,zonisamide,0.24325980392156862
