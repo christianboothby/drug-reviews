@@ -15,7 +15,7 @@ The results of which my analysis was based was achieved through using statistica
 ## Files in This Repository
 
  - [**Presentation slides**](): This was prepared to present the project, results, and recommendations to non-technical audience 
--   [**Technical report**](): This was prepared for reporting and explaining my project to a technical audience.
+-   [**Technical report**](https://github.com/christianboothby/drug-reviews/blob/main/Technical%20Report%20.md): This was prepared for reporting and explaining my project to a technical audience.
 -   **Jupyter Notebook files (.ipynb)**:
 	-   Step 1: [Dataset and Data Collection](https://github.com/christianboothby/drug-reviews/tree/main/Data%20Collection)
 	-   Step 2: [Data Cleaning](https://github.com/christianboothby/drug-reviews/blob/main/Data%20Cleaning.ipynb)
@@ -116,7 +116,7 @@ The word count between the positive and negative reviews did not differ. Therefo
 
 <a href="https://snipboard.io/8admkx.jpg"><img src="https://snipboard.io/8admkx.jpg" title="source: snipboard.io" style="width: 500px"/></a>
 
-The words side effects are most common in the bigrams and so I used a list of common side-effects mentioned in the reviews to predict drug sucess but this did not give scores above the baseline (0.687).
+The words side effects are most common in the plotted bigrams and so I used a list of common side-effects mentioned in the reviews to predict drug sucess but this did not give scores above the baseline (0.687).
 
 Despite this, I still wanted to understand what features of the review were impactful on the rating. Therefore, I decided to fit one more set of models on some new predictor variables. I used feature engineering to create some new variables. These were word count, sentence count, unique word count, letter count, punctuation count, stop word count, mean word length and sentiment which was caculated using the polarity of the reviews. I used these new features combined with the helpful count, month, year, condition and drug as predictors. Having identified the Random Forest Classifier as the best model, and running it through a grid search, the best score was calculated as being 0.787. I then took this model and identified the feature importance’s of the predictors to identify the most important predictors in reaching this score. A graphical representation of this has been shown below: 
 
