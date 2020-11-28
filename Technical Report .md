@@ -10,11 +10,11 @@ This project was completed during my time on the General Assembly Data Science I
 
 Through the analysis of my data, which will be web-scraped, I aim to identify review traits which are predictive of positively or negatively rated medical drugs and use these insights to help provide recommendations for various sectors within the healthcare industry. 
 
-The results of which my analysis was based was achieved through using statistical learning models such as classification predictive modelling, sentiment analysis and natural language processing. The best model that I fitted performed with 87.6 % accuracy, compared to a baseline of 68.7%. Actionable insights were extracted from this, resulting in the construction of a recommendation dataset of positivly ranked drugs grouped by condition. Furthermore, analysis into the language used in the reviews was completed in order to identify differences between the positive and negative reviews. Through using the coefficients extracted from the best model, the featured importance of words in the review could actively distinguish between positive and negative reviews. 
+The results of which my analysis was based was achieved through using statistical learning models such as classification predictive modelling, sentiment analysis and natural language processing. The best model that I fitted performed with 87.6% accuracy, compared to a baseline of 68.7%. Actionable insights were extracted from this, resulting in the construction of a recommendation dataset of positively ranked drugs grouped by condition. Furthermore, analysis into the language used in the reviews was completed in order to identify differences between the positive and negative reviews. Through using the coefficients extracted from the best model, the feature importance's of words in the review could actively distinguish between positive and negative reviews. 
 
 ## Motivation
 
-I have always been fascinated with the healthcare industry and the complex network of sectors behind it. Having transitioned from research into data science, I knew I wanted to investigate how data science and the healthcare industry are intertwined. This brought me to this project, looking at how the public perception of drugs can be used to make insights into drug success or failure. Having come from research, working on synthesising complex drug structures, I am aware of how pharmaceutical companies, and doctors alike, do not take the public’s perception of a drug into consideration. Is there more to understand and apply beyond the theoretical science and can machine learning help uncover this?
+I have always been fascinated with the healthcare industry and the complex network of sectors behind it. Having transitioned from research into data science, I knew I wanted to investigate how data science and the healthcare industry are intertwined. This brought me to this project, looking at how the public perception of drugs can be used to make insights into drug production and distribution. Having come from a background in research, working on synthesising complex drug structures, I am aware of how pharmaceutical companies, and doctors alike, do not take the public's perception of a drug into consideration. Is there more to understand and apply beyond the theoretical science and can machine learning help uncover this?
 
 ## Problem Statement
 
@@ -24,7 +24,7 @@ Medical drugs are not perfect. It is impossible to design and prescribe a drug w
 
 Research objectives are defined as the following:
 
-1.	Obtain drug reviews and review features through web-scraping and clean the reviews
+1.	Obtain drug reviews and review features through web-scraping and undergo data cleaning
 2.	Predict the probability of a drug being rated as positive or negative 
 3.	Build a recommendation system for these drugs by condition 
 4.	Create a tool that can help doctors, patients and pharmaceuticals improve the likelihood of a positively rated drug
@@ -41,11 +41,11 @@ My hypothesis is that people’s perceptions are significantly predictive of dru
 
 **Question 1 : Can patients’ perceptions allow alternative drugs to be considered?**
 
-My prediction is that models will be accurate in predicting drug success based on the data. I also predict that sentiment analysis into the reviews would reveal some factors into the difference between positivly and negativly rated drugs.
+My prediction is that models will be accurate in predicting drug success based on the data. I also predict that sentiment analysis into the reviews would reveal some factors into the difference between positively and negatively rated drugs.
 
 **Question 2: Did positively rated drugs get different reviews from negatively rated drugs?**
 
-This will further confirm that online patient reviews and perceptions are essential in helping patients make decisions and doctors/pharma understand what patients think about certain drugs. My prediction is that the positive reviews will use more uplifting language than the negative reviews. 
+This will further confirm that online patient reviews and perceptions are essential in helping patients make decisions and doctors/pharma understand what patients think about certain drugs. My prediction is that the positive reviews will use more uplifting language than the negative reviews.  
 
 ## Research Steps
 
@@ -105,7 +105,7 @@ People are more likely to rate higher than lower according to the count per rati
 
 The most reviewed conditions seem to surround mental health more than physical health.  
 
-The average helpful count seems to be increasing a lot between having a rating of 6 and 10. This means people are more likely to vote for a helpful review if it is more highly rated. This could be a potential for a good predictor in our model. The Average review length peaks at 8 although it does still increase overall between 1 and 10. This could be another possible predictor in our modelling. 
+The average helpful count seems to be increasing a lot between having a rating of 6 and 10. This means people are more likely to vote for a helpful review if it is more highly rated. This could be a potential for a good predictor in our model. The Average review length peaks at 8, although it does still increase overall between 1 and 10. This could be another possible predictor in our modelling. 
 
 **At this stage, the DataFrame has 54,0000 data entries and 9 columns**
 
@@ -119,7 +119,7 @@ I have set up a binary classification problem (1 as positive and 0 as negative) 
 4.	Support Vector Machine 
 5.	K-Nearest Neighbours Classifier
 
-In an effort to improve accuracy I used ensemble learning algorithms, which are built combining weak uncorrelated models increasing the weights/importance of misclassified observations on each iteration to obtain better predictions. I started with an Ada Boost Classifier which is known to robust a strong classifier by ensuring the accurate predictions of unusual observations and minimizing training error. Followed by a Gradient Boosting classifier which differs by fitting the new predictor to the residual errors made by the previous predictor. Therefore, for research question 1, the following additional models were also fitted:
+In an effort to improve accuracy I used ensemble learning algorithms, which are built combining weak uncorrelated models, increasing the weights/importance of misclassified observations on each iteration to obtain better predictions. I started with an Ada Boost Classifier which is known to robust a strong classifier by ensuring the accurate predictions of unusual observations and minimizing training error. Followed by a Gradient Boosting classifier which differs by fitting the new predictor to the residual errors made by the previous predictor. Therefore, for research question 1, the following additional models were also fitted:
 
 6.	Ada Boost Classifier
 7.	Gradient Boosting Classifier 
@@ -146,21 +146,21 @@ The success metrics used to analyse the models were:
 
 **Summary**
 
-Text features succeeded in having significant indications for a positively rated drugs, allowing a ranking of drugs per condition to be formed. Classification models predicted drug success with 88% accuracy. Additionally, extracting the coefficients of this model gave the word feature importance’s for both rankings of reviews. Moreover, using engineered review features as predictors saw classification models predict drug success with 79% accuracy. Despite this, the presence of side effects in the reviews did not have any significant indications for drug success. 
+Text features succeeded in having significant indications for positively rated drugs, allowing a ranking of drugs per condition to be constructed. Classification models predicted drug success with 88% accuracy. Additionally, extracting the coefficients of this model gave the word feature importance’s for both rankings of reviews. Moreover, using engineered review features as predictors saw classification models predict drug success with 79% accuracy. Despite this, the presence of side effects in the reviews did not have any significant indications for predicting positively rated drugs. 
 
 Baseline = 0.687 
 
 **Question 1: Can patients’ perceptions allow alternative drugs to be considered?**
 
-In order to get an overview of which predictor features to use, I began with running 5 default logistic regression models using 5 different sets of predictors. A summary table of models, predictors, test scores and CV scores has been provided below:
+In order to get an overview of which predictor features to use, I began with running 5 default Logistic Regression models using 5 different sets of predictors. A summary table of models, predictors, test scores and CV scores has been provided below:
 
 <a href="https://snipboard.io/dDn84s.jpg"><img src="https://snipboard.io/dDn84s.jpg" title="source: snipboard.io" style="width: 500px"/></a>
 
-The models with predictors not using the review text itself had considerably lower scores than when the text was included, via a count vectorizer classifier. I used a pipeline to initiate the review-based models to ensure vectorization occurred. Logistic Regression with an ngrams range between 1 and 2 gave the best test score with 0.876. This is a combination of single words and consecutive 2 words together. The difference in scores between models has been visualised in the horizonatal bar plot below: 
+The models with predictors not using the review text itself had considerably lower scores than when the text was included, via a Count Vectorizer Classifier. I used a pipeline to initiate the review-based models to ensure vectorization occurred. Logistic Regression with an ngrams range between 1 and 2 gave the best test score with 0.876. This is a combination of single words and consecutive 2 words together. The difference in scores between models has been visualised in the horizonatal bar plot below: 
 
 <a href="https://snipboard.io/QvMLub.jpg"><img src="https://snipboard.io/QvMLub.jpg" title="source: snipboard.io" style="width: 500px"/></a>
 
-Following the results of this initial modelling process, I continued with the top scoring Logistic Regression (ngrams(1,2)) model and refined the model to achieve better scores. In addition, I also ran further models using the ngrams(1,2) predictor to investigate whether other models could achieve better scores. All of these models were run in a pipeline in order to use the Count Vectorizer on the text. The difference in scores between models has been visualised in the horizonatal bar plot below:
+Following the results of this initial modelling process, I continued with the top scoring Logistic Regression (ngrams(1,2)) model and refined the model to achieve better scores. In addition, I also ran further models using the ngrams(1,2) predictor to investigate whether other models could achieve better scores. All of these models were run in a pipeline in order to use the Count Vectorizer on the text. A summary table of models, test scores and CV scores has been provided below::
 
 **Note: * indicates the models were run using GridSearchCV**
 
@@ -186,7 +186,7 @@ The confusion matrix gives the following statstics:
 - False Positives = 5%
 - False Negatives = 7%
 
-The precsion-recall curve identified that class 1 (positive ratings) are more likely to be predicted correctly that class 0 (negative ratings). This was identified by calculating the area under the curve, which was a ratio of 0.959:0.863 for class 1 and 0 respectivly. This slight deviation in areas between the curves is expected due to class 1 being the majority class. Although class 0 was lower, these values are both very high and reflect our model performed well. 
+The precsion-recall curve identified that class 1 (positive ratings) are more likely to be predicted correctly that class 0 (negative ratings). This was identified by calculating the area under the curve, which was a ratio of 0.959:0.863 for class 1 and 0 respectivly. This slight deviation in areas between the curves is expected due to class 1 being the majority class. Although class 0 was lower, these values are both very high and reflect the model performed well. 
 
 The ROC curve also provided evidence that the model performed well, with both class 0 and 1 having high areas under the curve with 0.93. 
 
@@ -199,7 +199,7 @@ I decided to use a Harvard dataset containing a list of 1915 positive words and 
 The feature engineering steps and construction of the resulting DataFrame are summarised below:
 
 1. Count number of positive and negative words in each review according to Harvard dataset
-2. Calculate positive word ratio and transform to 1,0.5,0 for positive, undecided or negative respectively 
+2. Calculate positive word ratio and transform to 1, 0.5, 0 for positive, undecided or negative respectively 
 3. Group by condition and calculate number of reviews per condition (denoted condition size)
 4. Scale helpful votes:
     Helpful Scaled=  Helpful Count/Condition Size
@@ -217,7 +217,7 @@ This table gives a final ranking of drugs, grouped by condition, based on three 
 2. Postive word ratio 
 3. Helpful vote count 
 
-Overall, the higher the total mean prediction, the more positivly rated the drug according to our model and our dataset. This could be used to look for alternative drugs on demand and successfully answers research question 1. 
+Overall, the higher the total mean prediction, the more positively rated the drug according to our model and our dataset. This could be used to look for alternative drugs on demand and successfully answers research question 1. 
 
 **Question 2: Did positively rated drugs get different reviews from negatively rated drugs?**
 
@@ -233,7 +233,7 @@ After fitting the same models as Q1, it was clear that models didn't provide inc
 
 <a href="https://snipboard.io/eG6DYX.jpg"><img src="https://snipboard.io/eG6DYX.jpg" title="source: snipboard.io" style="width: 500px"/></a>
 
-After this, I reverted back to the best predictor (ngrams(1,2)) and drew some more insights. I went on to investigate the difference in language betweeen the positive and negative reviews, which was done by extracting the coefficients of the best model from research question 1 (Logistic Regression with Ridge penalty). I was able to sort the coefficients for each word or two words and ultimatly form a table with the most important words in positive and negative words, ranked by positive impact. This can be found below: 
+After this, I reverted back to the best predictor (ngrams(1,2)) and drew some more insights. I went on to investigate the difference in language betweeen the positive and negative reviews, which was done by extracting the coefficients of the best model from research question 1 (Logistic Regression with Ridge penalty). I was able to sort the coefficients for each word or two consecutive words and ultimatly form a table with the most important words in positive and negative words, ranked by positive impact. This can be found below: 
 
 <a href="https://snipboard.io/fwpXML.jpg"><img src="https://snipboard.io/fwpXML.jpg" title="source: snipboard.io" style="width: 500px"/></a>
 
@@ -243,7 +243,7 @@ Finally, in order to investigate all aspects of the drug reviews, I decided to u
 
 <a href="https://snipboard.io/anwPyM.jpg"><img src="https://snipboard.io/anwPyM.jpg" title="source: snipboard.io" style="width: 500px"/></a>
 
-The model which performed the best in terms of highest test and mean cross validation score was the Random Forest Classifier, with an accuracy score of 0.787 (compared to a baseline of 0.687). Although this score is not as high as the model fitted in research question 1, it is still high enough to conduct some analysis. I extracted the feature importaces according to the Random Forest Classifier and plotted them, ranking from highest to lowest. This visualisation can be seen below: 
+The model which performed the best in terms of highest test and mean cross validation score was the Random Forest Classifier, with an accuracy score of 0.787 (compared to a baseline of 0.687). Although this score is not as high as the model fitted in research question 1, it is still high enough to conduct some analysis. I extracted the feature importances according to the Random Forest Classifier and plotted them, ranking from highest to lowest. This visualisation can be seen below: 
 
 <a href="https://snipboard.io/QVOhKC.jpg"><img src="https://snipboard.io/QVOhKC.jpg" title="source: snipboard.io" style="width: 500px"/></a>
 
@@ -262,32 +262,32 @@ Through my research steps, it was discovered that:
 - The mention of side-effects in the review did not help predict drug success
 - The performance of engineered review features allowed predictions of positive ratings to be made with 78% accuracy
 - Sentiment of the review was the most important feature in this prediction 
-- This leads to the conclusion of putting more focus on patient perception of drugs to prescribe, invest or synthesize drugs
+- This leads to the conclusion of putting more focus on patient perception of drugs to prescribe, invest in or synthesize drugs
 
 
 ### Technical Audience
 
 The goal of this project was to look for features within public written reviews to better predict postively rated drugs. I generated features through several aspects and investigated the use of text features as predictors. 
 
-The model was successful in predicting positively rated drugs with a score of 87.6% (vs a 68.7% baseline). This was a grid search with logistic regression model and ridge penalty, using the review text with an ngrams range of (1,2) as a predictor. 
+The model was successful in predicting positively rated drugs with a score of 87.6% (vs a 68.7% baseline). This was a grid search with Logistic Regression model and Ridge penalty, using the review text with an ngrams range of (1,2) as a predictor. 
 
 The investigation into the mention of side effects in the reviews failed to produce any models with accuracy scores higher than the baseline. Hence, it was concluded that side effects do not impact the prediction of positive drugs. 
 
-Finally, a grid search with random forest classifier identified that the review sentiment was most important in predicting positively rated drugs, performing with 78% accuracy. 
+Finally, a grid search with Random Forest Classifier identified that the review sentiment was most important in predicting positively rated drugs, performing with 78% accuracy. 
 
-This leads to the conclusion of putting more focus on patient perception of drugs to prescribe, invest or synthesize drugs.
+This leads to the conclusion of putting more focus on patient perception of drugs to prescribe, invest in or synthesize drugs.
 
 ## Limitations
 
 Due to the limited time frame, I only had time to web-scrape one website and had to be selective with the conditions and number of drugs per condition that I chose. Thus, the dataset may not be an accurate representation of the drug market. Moreover, the website did not give any information about location, which could be potentially important considering different countries have different healthcare systems in place such as insurance or private and public options. This could potentially cause low reliability of reviews as someone who pays for a drug and has a negative experience is more likely to rate lower than if the drug is claimed on insurance. 
 
-Moreover, it is a known fact that sentiment analysis has low reliability when the number of positive and negative words is small. For example, if there are 0 positive words and 1 negative word according to the Harvard dataset, the review is classified as negative. Therefore, a limit on sentiment words would be necessary to ensure higher reliability. To further ensure reliability of the predicted values, I normalized the helpful votes count and multiplied it by the predicted values. However, useful count will be higher for older reviews as the number of cumulated site visitors increases. This insinuates that I would need to consider time into the normalisation of the helpful vote counts.
+Moreover, it is a known fact that sentiment analysis has low reliability when the number of positive and negative words is small. For example, if there are 0 positive words and 1 negative word according to the Harvard dataset, the review is classified as negative. Therefore, a limit on sentiment words would be necessary to ensure higher reliability. To further ensure reliability of the predicted values, I normalised the helpful votes count and multiplied it by the predicted values. However, useful count will be higher for older reviews as the number of cumulated site visitors increases. This insinuates that I would need to consider time into the normalisation of the helpful vote counts.
 
 ## Future Recommendation 
 
 For future research, I would recommend to:
 
-- Obtain more information through web scraping, including alternative review websites
+- Obtain more information through web-scraping, including alternative review websites
 - Include more columns such as:
     - Dosage
     - Interactions with other drugs 

@@ -9,13 +9,13 @@ This project was completed during my time on the General Assembly Data Science I
 
 Through the analysis of my data, which will be web-scraped, I aim to identify review traits which are predictive of positively or negatively rated medical drugs and use these insights to help provide recommendations for various sectors within the healthcare industry. 
 
-The results of which my analysis was based was achieved through using statistical learning models such as classification predictive modelling, sentiment analysis and natural language processing. The best model that I fitted performed with 87.6 % accuracy, compared to a baseline of 68.7%. Actionable insights were extracted from this, resulting in the construction of a recommendation dataset of positivly ranked drugs grouped by condition. Furthermore, analysis into the language used in the reviews was completed in order to identify differences between the positive and negative reviews. Through using the coefficients extracted from the best model, the featured importance of words in the review could actively distinguish between positive and negative reviews. 
+The results of which my analysis was based was achieved through using statistical learning models such as classification predictive modelling, sentiment analysis and natural language processing. The best model that I fitted performed with 87.6% accuracy, compared to a baseline of 68.7%. Actionable insights were extracted from this, resulting in the construction of a recommendation dataset of positively ranked drugs grouped by condition. Furthermore, analysis into the language used in the reviews was completed in order to identify differences between the positive and negative reviews. Through using the coefficients extracted from the best model, the feature importance's of words in the review could actively distinguish between positive and negative reviews. 
 
 
 ## Files in This Repository
 
- - [**Presentation slides**](https://github.com/christianboothby/drug-reviews/blob/main/Capstone%20Presentation.pdf): This was prepared to present the project, results, and recommendations to non-technical audience 
--   [**Technical report**](https://github.com/christianboothby/drug-reviews/blob/main/Technical%20Report%20.md): This was prepared for reporting and explaining my project to a technical audience.
+ - [**Presentation slides**](https://github.com/christianboothby/drug-reviews/blob/main/Capstone%20Presentation.pdf): This was prepared to present the project, results, and recommendations to a non-technical audience
+-   [**Technical report**](https://github.com/christianboothby/drug-reviews/blob/main/Technical%20Report%20.md): This was prepared for reporting and explaining my project to a technical audiences
 -   **Jupyter Notebook files (.ipynb)**:
 	-   Step 1: [Dataset and Data Collection](https://github.com/christianboothby/drug-reviews/tree/main/Data%20Collection)
 	-   Step 2: [Data Cleaning](https://github.com/christianboothby/drug-reviews/blob/main/Data%20Cleaning.ipynb)
@@ -32,7 +32,7 @@ Medical drugs are not perfect. It is impossible to design and prescribe a drug w
 
 Research objectives are defined as the following:
 
-1.	Obtain drug reviews and review features through web-scraping and clean the reviews
+1.	Obtain drug reviews and review features through web-scraping and undergo data cleaning
 2.	Predict the probability of a drug being rated as positive or negative 
 3.	Build a recommendation system for these drugs by condition 
 4.	Create a tool that can help doctors, patients and pharmaceuticals improve the likelihood of a positively rated drug
@@ -49,7 +49,7 @@ My hypothesis is that people’s perceptions are significantly predictive of dru
 
 **Question 1 : Can patients’ perceptions allow alternative drugs to be considered?**
 
-My prediction is that models will be accurate in predicting drug success based on the data. I also predict that sentiment analysis into the reviews would reveal some factors into the difference between positivly and negativly rated drugs.
+My prediction is that models will be accurate in predicting drug success based on the data. I also predict that sentiment analysis into the reviews would reveal some factors into the difference between positively and negatively rated drugs.
 
 **Question 2: Did positively rated drugs get different reviews from negatively rated drugs?**
 
@@ -92,7 +92,7 @@ In addition to the above, Natural Language Processing (Count Vectorization) was 
 
 ### Question 1. Can patients’ perceptions allow alternative drugs to be  considered? What features of the review are important?
 
-Text features succeeded in having significant indications for a positively rated drugs, allowing a ranking of drugs per condition to be formed. A Logisitic Regression model with ridge penalty predicted drug success with 88% accuracy. A visual representation of the models I fitted, with the test and CV scores can ben seen below:
+Text features succeeded in having significant indications for positively rated drugs, allowing a ranking of drugs per condition to be constructed. A Logisitic Regression model with Ridge penalty predicted positive drug reviews with 88% accuracy. A visual representation of the models I fitted, with the test and CV scores, can ben seen below:
 
 <a href="https://snipboard.io/paRi5H.jpg"><img src="https://snipboard.io/paRi5H.jpg" title="source: snipboard.io" style="width: 500px"/></a>
 
@@ -100,7 +100,7 @@ I decided to use a Harvard dataset containing a list of 1915 positive words and 
 
 [Harvard Dataset](http://www.wjh.harvard.edu/~inquirer/homecat.htm)
 
-**Note: Only first three conditions, ranked alphabetically, have been shown for the purpose of example**
+**Note: Only the first three conditions, ranked alphabetically, have been shown for the purpose of example**
 
 <a href="https://snipboard.io/zpcEPl.jpg"><img src="https://snipboard.io/zpcEPl.jpg" title="source: snipboard.io" style="width: 500px"/></a>
 
@@ -133,22 +133,22 @@ Through my research steps, it was discovered that:
 - This led to forming recommendations based on our predictions, the ratio of positive words per review and the helpful vote count
 - Positive and negative reviews has similar word counts for the most frequently used words
 - Extracting model coefficients proved that different language was used for different rating category 
-- The mention of side-effects in the review did not help predict drug success
+- The mention of side-effects in the review did not help predict positive drug reviews
 - The performance of engineered review features allowed predictions of positive ratings to be made with 78% accuracy
 - Sentiment of the review was the most important feature in this prediction 
-- This leads to the conclusion of putting more focus on patient perception of drugs to prescribe, invest or synthesize drugs 
+- This leads to the conclusion of putting more focus on patient perception of drugs to prescribe, invest in or synthesise drugs 
 
 
 ### Technical Audience
 
 The goal of this project was to look for features within public written reviews to better predict postively rated drugs. I generated features through several aspects and investigated the use of text features as predictors. 
 
-The model was successful in predicting positively rated drugs with a score of 87.6% (vs a 68.7% baseline). This was a grid search with logistic regression model and ridge penalty, using the review text with an ngrams range of (1,2) as a predictor. 
+The model was successful in predicting positively rated drugs with a score of 87.6% (vs a 68.7% baseline). This was a grid search with Logistic Regression model and Ridge penalty, using the review text with an ngrams range of (1,2) as a predictor. 
 
-The investigation into the mention of side effects in the reviews failed to produce any models with accuracy scores higher than the baseline. Hence, it was concluded that side effects do not impact the prediction of positive drugs. 
+The investigation into the mention of side effects in the reviews failed to produce any models with accuracy scores higher than the baseline. Hence, it was concluded that side effects do not impact the prediction of positively rated drugs. 
 
-Finally, a grid search with random forest classifier identified that the review sentiment was most important in predicting positively rated drugs, performing with 78% accuracy. 
+Finally, a grid search with Random Forest Classifier identified that the review sentiment was most important in predicting positively rated drugs, performing with 78% accuracy. 
 
-This leads to the conclusion of putting more focus on patient perception of drugs to prescribe, invest or synthesize drugs.
+This leads to the conclusion of putting more focus on patient perception of drugs to prescribe, invest in or synthesise drugs.
 
 
