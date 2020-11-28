@@ -289,9 +289,9 @@ For future research, I would recommend to:
 
 - Obtain more information through web scraping, including alternative review websites
 - Include more columns such as:
-    o	Dosage
-    o	Interactions with other drugs 
-    o	Known side effects 
+    - Dosage
+    - Interactions with other drugs 
+    - Known side effects 
 - Fit more models and run more grid searches
 - Build recommendation engines for doctors to use for their patients 
 - Build recommendation engines for pharmaceutical companies to use in their business models

@@ -14,7 +14,7 @@ The results of which my analysis was based was achieved through using statistica
 
 ## Files in This Repository
 
- - [**Presentation slides**](): This was prepared to present the project, results, and recommendations to non-technical audience 
+ - [**Presentation slides**](https://github.com/christianboothby/drug-reviews/blob/main/Capstone%20Presentation.pdf): This was prepared to present the project, results, and recommendations to non-technical audience 
 -   [**Technical report**](https://github.com/christianboothby/drug-reviews/blob/main/Technical%20Report%20.md): This was prepared for reporting and explaining my project to a technical audience.
 -   **Jupyter Notebook files (.ipynb)**:
 	-   Step 1: [Dataset and Data Collection](https://github.com/christianboothby/drug-reviews/tree/main/Data%20Collection)
