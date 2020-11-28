@@ -26,7 +26,7 @@ The results of which my analysis was based was achieved through using statistica
 
 ## Problem Statement
 
-Medical drugs are not perfect. It is impossible to design and prescribe a drug which is suitable for each individual person. Doctors and big pharmaceutical companies rely on theoretical science to make decisions. However, is it possible that the public perception of drugs could be able to shed some new light onto using alternative drugs and make decisions easier to understand for the drug recipient. Through machine learning, could I accurately predict what makes a drug review positive and hence be able to recommend a particular drug for a particular person?
+Medical drugs are not perfect. It is impossible to design and prescribe a drug which is suitable for each individual person. Doctors and big pharmaceutical companies rely on theoretical science to make decisions. However, is it possible that the public perception of drugs could be able to shed some new light onto using alternative drugs and make decisions easier to understand for the drug recipient? Through machine learning, could I accurately predict what makes a drug review positive and hence be able to recommend a particular drug for a particular person?
 
 ## Objectives
 
