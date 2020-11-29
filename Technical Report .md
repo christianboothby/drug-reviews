@@ -14,7 +14,7 @@ The results of which my analysis was based was achieved through using statistica
 
 ## Motivation
 
-I have always been fascinated with the healthcare industry and the complex network of sectors behind it. Having transitioned from research into data science, I knew I wanted to investigate how data science and the healthcare industry are intertwined. This brought me to this project, looking at how the public perception of drugs can be used to make insights into drug production and distribution. Having come from a background in research, working on synthesising complex drug structures, I am aware of how pharmaceutical companies, and doctors alike, do not take the public's perception of a drug into consideration. Is there more to understand and apply beyond the theoretical science and can machine learning help uncover this?
+I have always been fascinated with the healthcare industry and the complex network of sectors behind it. Having transitioned from research into data science, I knew I wanted to investigate how data science and the healthcare industry are intertwined. This brought me to this project, looking at how the public perception of drugs can be used to make insights into drug production and distribution. This is particularly important at the time of this project with the ongoing chaos surrounding COVID-19. Having come from a background in research, working on synthesising complex drug structures, I am aware of how pharmaceutical companies, and doctors alike, do not take the public's perception of a drug into consideration. Is there more to understand and apply beyond the theoretical science and can machine learning help uncover this?
 
 ## Problem Statement
 
